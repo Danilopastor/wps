@@ -1,12 +1,6 @@
 const { Client } = require('whatsapp-web.js')
 
 const client = new Client({
-    session: {
-        WABrowserId: '"LUXiaJEi+XzKJ4cLms1c7w=="',
-        WASecretBundle: '{"key":"yYtLiJeg/8oQaUpL5M7A0Oxm547AWuto7NPmEiujzu0=","encKey":"6s1kwKx+9UAOkc5yrS2Lvbcjr3KoK1h8efqXC7+BQ7o=","macKey":"yYtLiJeg/8oQaUpL5M7A0Oxm547AWuto7NPmEiujzu0="}',
-        WAToken1: '"4k8jd1pidtW5H1LYrK6KcgkiUnY5yxph7iDpVbo1CuI="',
-        WAToken2: '"1@MuUZG9hBQOiD4Q/V4xwrIbP/vsN9BbzPp7oLDi723ZbbUbIB2hyQNeUf0do8zGhRUgGPQiEV4HICtQ=="'
-    },
     puppeteer: {headless: false}});
 // You can use an existing session and avoid scanning a QR code by adding a "session" object to the client options.
 // This object must include WABrowserId, WASecretBundle, WAToken1 and WAToken2.
